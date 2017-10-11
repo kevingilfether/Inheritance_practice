@@ -50,7 +50,7 @@ namespace Inheritance_practice
             this.movementSpeed = movementSpeed;
             this.distanceTraveled = 0.0d;
         }
-        public void Move()
+        public virtual void Move()
         {
             distanceTraveled += movementSpeed;
         }
