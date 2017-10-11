@@ -8,13 +8,13 @@ namespace Inheritance_practice
 {
     class Vehicle
     {
-        private int seats;
-        private int carryingCapacity;
-        private string color;
-        private double movementSpeed;
-        private float gearRatio;
-        private float engineSize;
-        private double distanceTraveled;
+        protected int seats;
+        protected int carryingCapacity;
+        protected string color;
+        protected double movementSpeed;
+        protected float gearRatio;
+        protected float engineSize;
+        protected double distanceTraveled;
 
         public int Seats
         {
@@ -50,7 +50,10 @@ namespace Inheritance_practice
             this.movementSpeed = movementSpeed;
             this.distanceTraveled = 0.0d;
         }
-
+        public void Move()
+        {
+            distanceTraveled += movementSpeed;
+        }
 
     }
 }

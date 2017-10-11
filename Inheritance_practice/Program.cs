@@ -10,6 +10,9 @@ namespace Inheritance_practice
     {
         static void Main(string[] args)
         {
+            Vehicle baseVehicle = new Vehicle(4, 2000, "green", 55.0d);
+            baseVehicle.Move();
+            Console.WriteLine(baseVehicle.DistanceTraveled);
         }
     }
 }
