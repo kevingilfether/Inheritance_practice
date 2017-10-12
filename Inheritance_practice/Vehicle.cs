@@ -55,5 +55,12 @@ namespace Inheritance_practice
             distanceTraveled += movementSpeed;
         }
 
+        public virtual string GetDistanceTraveled()
+        {
+            return "Distance Traveled: " + distanceTraveled;
+        }
+
+
+
     }
 }

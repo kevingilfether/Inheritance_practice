@@ -9,7 +9,12 @@ namespace Inheritance_practice
     class Aircraft : Vehicle
     {
 
-        private double Altitude { get; set; }
+        private double altitude;
+
+        public double Altitude
+        {
+            get { return this.altitude; }
+        }
 
         public Aircraft(int seats, int carryingCapacity, string color, double movementSpeed)
         {
@@ -18,12 +23,17 @@ namespace Inheritance_practice
             this.color = color;
             this.movementSpeed = movementSpeed;
 
-            this.Altitude = 0.0d;
+            this.altitude = 0.0d;
         }
         public override void Move()
         {
-            Altitude += 10000.0d;
+            altitude += 10000.0d;
             base.Move();
+        }
+        public override string GetDistanceTraveled()
+        {
+            return "Altitude: " + altitude + " - " + base.GetDistanceTraveled();
+
         }
 
     }
