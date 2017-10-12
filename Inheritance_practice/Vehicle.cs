@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Inheritance_practice
 {
-    class Vehicle
+    abstract class Vehicle
     {
         protected int seats;
         protected int carryingCapacity;

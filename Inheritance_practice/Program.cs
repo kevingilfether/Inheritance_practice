@@ -10,14 +10,17 @@ namespace Inheritance_practice
     {
         static void Main(string[] args)
         {
-            //Vehicle baseVehicle = new Vehicle(4, 2000, "green", 55.0d);
-            //baseVehicle.Move();
-            //Console.WriteLine(baseVehicle.DistanceTraveled);
 
-            Automobile herbie = new Automobile(4, 13, 2, 4, 1400, "white", 88.8);
-            herbie.Move();
-            herbie.Move();
-            Console.WriteLine("Automobile Distance Traveled: " + herbie.DistanceTraveled);
+            //Automobile herbie = new Automobile(4, 13, 2, 4, 1400, "white", 88.8);
+            //herbie.Move();
+            //herbie.Move();
+            //Console.WriteLine("Automobile Distance Traveled: " + herbie.DistanceTraveled);
+
+            //Boat boaty = new Boat(2, 500, "red", 88, .9d);
+            //boaty.Move();
+            //boaty.Move();
+            //Console.WriteLine("Boat distance travelled: " + boaty.DistanceTraveled);
+
         }
     }
 }
