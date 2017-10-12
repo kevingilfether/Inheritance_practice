@@ -28,7 +28,7 @@ namespace Inheritance_practice
         {
 
         }
-        public string NameCheck()
+        public virtual string NameCheck()
         {
             return name;
         }
